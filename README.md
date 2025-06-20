@@ -40,7 +40,7 @@ All data is simulated and anonymized.
 
 You can download the full Power BI file here:
 
-➡️ [NOVA_Performance_Dashboard.pbix](NOVA_Performance_Dashboard.pbix)
+➡️ [NOVA_Performance_Dashboard.pbix](NOVA%20Performance%20Dashboard_Mockup.pbixx)
 
 
 **Author:** Vasco Bento
