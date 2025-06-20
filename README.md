@@ -16,9 +16,9 @@ A Power BI mockup designed for Supply Chain performance analysis — main KPIs (
 ---
 
 ##  **Screenshots**
-Page 1 | Page 2 | Page 3
-:-------------------------:|:-------------------------:|:-------------------------:
-![](NOVA Performance Dashboard_Mockup Pag.1.png) | ![](NOVA Performance Dashboard_Mockup Pag.2.png) | ![](NOVA Performance Dashboard_Mockup Pag.3.png)
+| Page 1 | Page 2 | Page 3 |
+|--------|--------|--------|
+| ![](NOVA%20Performance%20Dashboard_Mockup%20Pag.1.png) | ![](NOVA%20Performance%20Dashboard_Mockup%20Pag.2.png) | ![](NOVA%20Performance%20Dashboard_Mockup%20Pag.3.png) |
 
 ---
 
