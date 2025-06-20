@@ -1,0 +1,35 @@
+# DAX Measures for NOVA Performance Dashboard
+
+---
+
+## Cumulative Inbound (Pareto Line)
+
+```DAX
+Cumulative Inbound = 
+VAR CurrentMaterial = SELECTEDVALUE(tMB51_Mockup[Material])
+RETURN
+    SUMX(
+        FILTER(
+            ALLSELECTED(tMB51_Mockup[Material]),
+            [Total Inbound] >= CALCULATE([Total Inbound], tMB51_Mockup[Material] = CurrentMaterial)
+        ),
+        [Total Inbound]
+    )
+
+Sales MoM Variance Display = 
+VAR SalesLastMonth = [Total Sales (Last Month)]
+VAR SalesPrevMonth = [Sales (Previous Month)]
+VAR Delta = DIVIDE(SalesLastMonth - SalesPrevMonth, SalesPrevMonth)
+RETURN
+    IF(
+        ISBLANK(Delta),
+        "–",
+        VAR Arrow = IF(Delta >= 0, "▲", "▼")
+        VAR Perc = FORMAT(Delta, "0.0%")
+        RETURN Arrow & " " & Perc
+    )
+
+InsightsText = 
+"Top 3 customers are responsible for " &
+FORMAT([Top3Customers%Sales], "Percent") &
+" of total sales."
