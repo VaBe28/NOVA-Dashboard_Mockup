@@ -36,6 +36,13 @@ This dashboard is a fictional (mockup) project developed to showcase analytical 
 Based on SAP MM table. 
 All data is simulated and anonymized.
 
+## 📂 Download the Dashboard
+
+You can download the full Power BI file here:
+
+➡️ [NOVA_Performance_Dashboard.pbix](NOVA_Performance_Dashboard.pbix)
+
+
 **Author:** Vasco Bento
 
 ---
